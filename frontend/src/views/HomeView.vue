@@ -1,6 +1,6 @@
 <template>
   <div>
-    首页1
+    首页2
   </div>
 </template>
 
