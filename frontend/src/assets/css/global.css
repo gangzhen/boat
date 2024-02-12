@@ -1,10 +1,43 @@
+@font-face {
+    font-family: 'SourceHanSerif-Bold'; /* 自定义字体的名称 */
+    src: url('~@/assets/fonts/SourceHanSerif/SourceHanSerif-Bold.ttc') format('truetype'); /* 字体文件的路径和格式 */
+}
+@font-face {
+    font-family: 'SourceHanSerif-ExtraLight'; /* 自定义字体的名称 */
+    src: url('~@/assets/fonts/SourceHanSerif/SourceHanSerif-ExtraLight.ttc') format('truetype'); /* 字体文件的路径和格式 */
+}
+@font-face {
+    font-family: 'SourceHanSerif-Heavy'; /* 自定义字体的名称 */
+    src: url('~@/assets/fonts/SourceHanSerif/SourceHanSerif-Heavy.ttc') format('truetype'); /* 字体文件的路径和格式 */
+}
+@font-face {
+    font-family: 'SourceHanSerif-Light'; /* 自定义字体的名称 */
+    src: url('~@/assets/fonts/SourceHanSerif/SourceHanSerif-Light.ttc') format('truetype'); /* 字体文件的路径和格式 */
+}
+@font-face {
+    font-family: 'SourceHanSerif-Medium'; /* 自定义字体的名称 */
+    src: url('~@/assets/fonts/SourceHanSerif/SourceHanSerif-Medium.ttc') format('truetype'); /* 字体文件的路径和格式 */
+}
+@font-face {
+    font-family: 'SourceHanSerif-Regular'; /* 自定义字体的名称 */
+    src: url('~@/assets/fonts/SourceHanSerif/SourceHanSerif-Regular.ttc') format('truetype'); /* 字体文件的路径和格式 */
+}
+@font-face {
+    font-family: 'SourceHanSerif-SemiBold'; /* 自定义字体的名称 */
+    src: url('~@/assets/fonts/SourceHanSerif/SourceHanSerif-SemiBold.ttc') format('truetype'); /* 字体文件的路径和格式 */
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    color: black;
-    font-size: 14px;
+    width: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
+    background-color: #F1D792;
+    color: #31170D !important;
+    font-size: 14px;
+    font-family: "SourceHanSerif-Regular", serif;
 }
