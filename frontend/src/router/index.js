@@ -8,14 +8,29 @@ const routes = [
         path: '/',
         name: 'root',
         component: () => import('@/views/LayoutView.vue'),
+        redirect: '/main/home',
         children: [
+            {
+                path: 'main',
+                name: 'main',
+                component: () => import('@/views/main/MainView.vue'),
+                children: [
+                    {
+                        path: 'home',
+                        name: 'home',
+                        component: () => import('@/views/main/home/HomeView.vue'),
+                    },
+                ],
+            },
             {
                 path: 'coach',
                 name: 'coach',
+                component: () => import('@/views/main/MainView.vue'),
                 children: [
                     {
                         path: 'rowing',
                         name: 'coach_rowing',
+                        component: () => import('@/views/main/MainView.vue'),
                         children: [
                             {
                                 path: 'annual-register',
@@ -37,6 +52,7 @@ const routes = [
                     {
                         path: 'kayaking',
                         name: 'coach_kayaking',
+                        component: () => import('@/views/main/MainView.vue'),
                         children: [
                             {
                                 path: 'annual-register',
@@ -60,10 +76,12 @@ const routes = [
             {
                 path: 'referee',
                 name: 'referee',
+                component: () => import('@/views/main/MainView.vue'),
                 children: [
                     {
                         path: 'rowing',
                         name: 'referee_rowing',
+                        component: () => import('@/views/main/MainView.vue'),
                         children: [
                             {
                                 path: 'annual-register',
@@ -85,6 +103,7 @@ const routes = [
                     {
                         path: 'kayaking',
                         name: 'referee_kayaking',
+                        component: () => import('@/views/main/MainView.vue'),
                         children: [
                             {
                                 path: 'annual-register',
@@ -108,10 +127,12 @@ const routes = [
             {
                 path: 'athlete',
                 name: 'athlete',
+                component: () => import('@/views/main/MainView.vue'),
                 children: [
                     {
                         path: 'rowing',
                         name: 'athlete_rowing',
+                        component: () => import('@/views/main/MainView.vue'),
                         children: [
                             {
                                 path: 'annual-register',
@@ -123,6 +144,7 @@ const routes = [
                     {
                         path: 'kayaking',
                         name: 'athlete_kayaking',
+                        component: () => import('@/views/main/MainView.vue'),
                         children: [
                             {
                                 path: 'annual-register',
@@ -136,10 +158,12 @@ const routes = [
             {
                 path: 'information',
                 name: 'information',
+                component: () => import('@/views/main/MainView.vue'),
                 children: [
                     {
                         path: 'rowing',
                         name: 'information_rowing',
+                        component: () => import('@/views/main/MainView.vue'),
                         children: [
                             {
                                 path: 'competition-calendar',
@@ -156,6 +180,7 @@ const routes = [
                     {
                         path: 'kayaking',
                         name: 'information_kayaking',
+                        component: () => import('@/views/main/MainView.vue'),
                         children: [
                             {
                                 path: 'competition-calendar',
@@ -174,6 +199,7 @@ const routes = [
             {
                 path: 'results-notice',
                 name: 'results-notice',
+                component: () => import('@/views/main/MainView.vue'),
                 children: [
                     {
                         path: 'rowing',
@@ -190,10 +216,12 @@ const routes = [
             {
                 path: 'points',
                 name: 'points',
+                component: () => import('@/views/main/MainView.vue'),
                 children: [
                     {
                         path: 'rowing',
                         name: 'points_rowing',
+                        component: () => import('@/views/main/MainView.vue'),
                         children: [
                             {
                                 path: 'ranking',
@@ -208,10 +236,12 @@ const routes = [
                             {
                                 path: 'statistic',
                                 name: 'points_rowing_statistic',
+                                component: () => import('@/views/main/MainView.vue'),
                                 children: [
                                     {
                                         path: 'entry',
                                         name: 'points_rowing_statistic_entry',
+                                        component: () => import('@/views/main/MainView.vue'),
                                         children: [
                                             {
                                                 path: 'name-list',
@@ -233,6 +263,7 @@ const routes = [
                                     {
                                         path: 'retention',
                                         name: 'points_rowing_statistic_retention',
+                                        component: () => import('@/views/main/MainView.vue'),
                                         children: [
                                             {
                                                 path: 'name-list',
@@ -258,6 +289,7 @@ const routes = [
                     {
                         path: 'kayaking',
                         name: 'points_kayaking',
+                        component: () => import('@/views/main/MainView.vue'),
                         children: [
                             {
                                 path: 'ranking',
@@ -272,10 +304,12 @@ const routes = [
                             {
                                 path: 'statistic',
                                 name: 'points_kayaking_statistic',
+                                component: () => import('@/views/main/MainView.vue'),
                                 children: [
                                     {
                                         path: 'entry',
                                         name: 'points_kayaking_statistic_entry',
+                                        component: () => import('@/views/main/MainView.vue'),
                                         children: [
                                             {
                                                 path: 'name-list',
@@ -297,6 +331,7 @@ const routes = [
                                     {
                                         path: 'retention',
                                         name: 'points_kayaking_statistic_retention',
+                                        component: () => import('@/views/main/MainView.vue'),
                                         children: [
                                             {
                                                 path: 'name-list',
@@ -324,10 +359,12 @@ const routes = [
             {
                 path: 'manage-notice',
                 name: 'manage-notice',
+                component: () => import('@/views/main/MainView.vue'),
                 children: [
                     {
                         path: 'rowing',
                         name: 'manage-notice_rowing',
+                        component: () => import('@/views/main/MainView.vue'),
                         children: [
                             {
                                 path: 'referee-notice',
@@ -354,6 +391,7 @@ const routes = [
                     {
                         path: 'kayaking',
                         name: 'manage-notice_kayaking',
+                        component: () => import('@/views/main/MainView.vue'),
                         children: [
                             {
                                 path: 'referee-notice',
@@ -388,5 +426,10 @@ const router = new VueRouter({
     base: process.env.BASE_URL,
     routes
 })
+
+const VueRouterPush = VueRouter.prototype.push
+VueRouter.prototype.push = function push (to) {
+    return VueRouterPush.call(this, to).catch(err => err)
+}
 
 export default router

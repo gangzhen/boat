@@ -451,6 +451,9 @@ export default {
     }
   },
   methods: {
+    goHome() {
+      this.$router.push('/')
+    },
     menuSelect(index) {
       this.activeIndex = index;
     },
@@ -464,7 +467,7 @@ export default {
       <img src="@/assets/img/logo.png" alt="" style="width: 70px; height: 70px">
     </div>
     <div class="aside-title">
-      <span>赛艇皮划艇赛事管理系统</span>
+      <span @click="goHome()">赛艇皮划艇赛事管理系统</span>
     </div>
     <div class="aside-menu">
       <el-menu
