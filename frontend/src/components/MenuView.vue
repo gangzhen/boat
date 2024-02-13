@@ -68,6 +68,6 @@ export default {
 
 .el-menu-item.is-active .menu-icon {
   margin-left: -4px;
-  color: #FFFFFF;
+  color: #F1D792;
 }
 </style>

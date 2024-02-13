@@ -473,7 +473,7 @@ export default {
       <el-menu
           background-color="#CE111A"
           text-color="#FFFFFF"
-          active-text-color="#FFFFFF"
+          active-text-color="#F1D792"
           :default-active="activeIndex"
           :unique-opened="true"
           router
