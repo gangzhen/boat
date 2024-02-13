@@ -31,12 +31,14 @@ export default {
     </div>
     <div class="header-user">
       <el-dropdown placement="bottom" trigger="click">
-
-        <span class="header-user-item">admin</span>
+        <div>
+          <svg-icon-view class="header-user-icon" icon-file-name="user" color="#000000" />
+          <span class="header-user-item">admin</span>
+        </div>
         <el-dropdown-menu slot="dropdown" style="color: #000000">
-          <el-dropdown-item>查看</el-dropdown-item>
-          <el-dropdown-item>新增</el-dropdown-item>
-          <el-dropdown-item>删除</el-dropdown-item>
+          <el-dropdown-item>个人信息</el-dropdown-item>
+          <el-dropdown-item>修改密码</el-dropdown-item>
+          <el-dropdown-item>退出登录</el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
     </div>
@@ -61,6 +63,10 @@ export default {
   flex: 1;
   align-items: center;
   justify-content: flex-end;
+}
+
+.header-user-icon {
+  margin-right: 5px;
 }
 
 .header-user-item {
