@@ -52,7 +52,10 @@ export default {
   color: #FFFFFF;
 }
 
-.el-menu-item:hover, .el-submenu__title:hover {
+.el-menu-item:hover,
+.el-submenu__title:hover,
+.el-menu-item:hover .menu-icon,
+.el-submenu__title:hover .menu-icon {
   color: #F1D792 !important;
 }
 
