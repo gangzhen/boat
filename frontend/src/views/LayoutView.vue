@@ -12,7 +12,7 @@ export default {
 <template>
   <div class="b-layout">
     <el-container>
-      <el-aside width="250px">
+      <el-aside width="280px">
         <AsideView/>
       </el-aside>
       <el-container>

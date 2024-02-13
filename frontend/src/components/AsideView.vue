@@ -522,6 +522,6 @@ export default {
 
 .el-menu {
   border: none;
-  width: 250px;
+  width: 280px;
 }
 </style>
