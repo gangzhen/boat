@@ -56,6 +56,7 @@ body {
     justify-content: center;
     height: 120px;
     background-color: #CE111A;
+    cursor: pointer;
 }
 
 .aside-title {
@@ -68,6 +69,7 @@ body {
     background-color: #CE111A;
     font-size: 18px;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 .aside-menu {
@@ -102,6 +104,12 @@ body {
     flex: 1;
     align-items: center;
     justify-content: flex-end;
+    cursor: pointer;
+}
+
+.header-user-area:hover .header-user-icon,
+.header-user-area:hover .header-user-item {
+    color: #F1D792 !important;
 }
 
 .header-user-icon {
@@ -148,6 +156,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 0;
+    font-weight: bold;
 }
 
 .main-table {

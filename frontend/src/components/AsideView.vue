@@ -9,6 +9,19 @@ export default {
       activeIndex: this.$route.path,
       menuArr: [
         {
+          name: "首页",
+          path: "/",
+          icon: "home",
+          children: [
+            {
+              name: "赛艇皮划艇赛事管理系统",
+              path: "/main/home",
+              icon: "system",
+              children: []
+            },
+          ],
+        },
+        {
           name: "教练员",
           path: "教练员",
           icon: "coach",
@@ -448,6 +461,11 @@ export default {
           ],
         },
       ],
+    }
+  },
+  watch: {
+    $route() {
+      this.activeIndex = this.$route.path;
     }
   },
   methods: {

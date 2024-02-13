@@ -10,7 +10,7 @@ export default {
     this.breadcrumbList = this.$route.matched;
   },
   watch: {
-    $route(to, from) {
+    $route() {
         this.breadcrumbList = this.$route.matched;
     }
   },
@@ -31,7 +31,7 @@ export default {
     </div>
     <div class="header-user">
       <el-dropdown placement="bottom" trigger="click">
-        <div>
+        <div class="header-user-area">
           <svg-icon-view class="header-user-icon" icon-file-name="user" color="#000000" />
           <span class="header-user-item">admin</span>
         </div>
