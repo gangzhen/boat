@@ -487,45 +487,5 @@ export default {
 </template>
 
 <style scoped>
-.aside-area {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow: scroll;
-}
 
-::-webkit-scrollbar {
-  display: none;
-}
-
-.aside-logo {
-  display: flex;
-  flex: none;
-  align-items: center;
-  justify-content: center;
-  height: 120px;
-  background-color: #CE111A;
-}
-
-.aside-title {
-  display: flex;
-  flex: none;
-  align-items: center;
-  justify-content: center;
-  height: 60px;
-  color: #FFFFFF;
-  background-color: #CE111A;
-  font-size: 18px;
-  font-weight: bolder;
-}
-
-.aside-menu {
-  display: flex;
-  flex: 1;
-}
-
-.el-menu {
-  border: none;
-  width: 280px;
-}
 </style>

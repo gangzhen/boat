@@ -45,41 +45,6 @@ export default {
   </div>
 </template>
 
-<style>
-.header-area {
-  display: flex;
-  height: 100%;
-}
+<style scoped>
 
-.header-breadcrumb {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.header-user {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.header-user-icon {
-  margin-right: 5px;
-}
-
-.header-user-item {
-  color: #000000;
-  font-size: 16px;
-  font-weight: bolder;
-}
-
-.el-breadcrumb__inner.is-link:hover {
-  color: #F1D792;
-}
-
-.el-dropdown-menu__item {
-  color: #000000;
-}
 </style>

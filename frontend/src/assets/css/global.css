@@ -12,7 +12,154 @@ body {
     font-size: 14px;
 }
 
-.main-area {
+/* 布局CSS */
+.b-layout {
+    width: 100%;
+    height: 100vh;
+}
+
+.b-layout .el-container {
+    height: 100vh;
+}
+
+.b-layout .el-aside {
+    height: 100vh;
+    background-color: #CE111A;
+    box-shadow: 2px 0 6px rgba(0, 21, 41, .35);
+}
+
+.b-layout .el-header {
+    box-shadow: 2px 0 6px rgba(0, 21, 41, .35);
+}
+
+.b-layout .el-main {
     width: 100%;
     height: 100%;
+}
+
+/* 侧边栏CSS */
+.aside-area {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: scroll;
+}
+
+.aside-area::-webkit-scrollbar {
+    display: none;
+}
+
+.aside-logo {
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: #CE111A;
+}
+
+.aside-title {
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    color: #FFFFFF;
+    background-color: #CE111A;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.aside-menu {
+    display: flex;
+    flex: 1;
+}
+
+.aside-menu .el-menu {
+    border: none;
+    width: 280px;
+}
+
+/* 顶栏CSS */
+.header-area {
+    display: flex;
+    height: 100%;
+}
+
+.header-breadcrumb {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-breadcrumb .el-breadcrumb__inner.is-link:hover {
+    color: #F1D792;
+}
+
+.header-user {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-user-icon {
+    margin-right: 5px;
+}
+
+.header-user-item {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+/* 页面主体布局CSS */
+.main-view-area {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 0 6px rgba(0, 21, 41, .35);
+}
+
+/* 页面CSS */
+.main-area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.main-search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.main-search-form {
+    display: flex;
+    height: 100%;
+}
+
+.main-search-form .el-form-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.main-table {
+    display: flex;
+    flex: 9;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.main-table-page {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
 }

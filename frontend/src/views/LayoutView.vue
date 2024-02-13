@@ -28,27 +28,5 @@ export default {
 </template>
 
 <style scoped>
-.b-layout {
-  width: 100%;
-  height: 100vh;
-}
-
-.el-container {
-  height: 100vh;
-}
-
-.el-aside {
-  height: 100vh;
-  background-color: #CE111A;
-}
-
-.el-header {
-  box-shadow: 2px 0 6px rgba(0, 21, 41, .35);
-}
-
-.el-main {
-  width: 100%;
-  height: 100%;
-}
 
 </style>
