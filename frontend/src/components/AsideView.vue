@@ -472,8 +472,8 @@ export default {
     <div class="aside-menu">
       <el-menu
           background-color="#FC0E31"
-          text-color="#31170D"
-          active-text-color="#31170D"
+          text-color="#FFFFFF"
+          active-text-color="#FC0E31"
           :default-active="activeIndex"
           :unique-opened="true"
           router
@@ -509,6 +509,7 @@ export default {
   align-items: center;
   justify-content: center;
   height: 60px;
+  color: #FFFFFF;
   background-color: #FC0E31;
   font-size: 16px;
   font-family: "SourceHanSerif-Heavy", serif;
@@ -521,6 +522,6 @@ export default {
 
 .el-menu {
   border: none;
-  width: 300px;
+  width: 250px;
 }
 </style>

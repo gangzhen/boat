@@ -6,14 +6,23 @@ export default {
     iconFileName: {
       type: String,
       required: true
+    },
+    color: {
+      type: String,
+      default: '#FFFFFF'
     }
   },
+  computed: {
+    style() {
+      return { "--color": this.color };
+    }
+  }
 }
 </script>
 
 <template>
   <i v-if="iconFileName.indexOf('el-icon-') === 0" :class="iconFileName" />
-  <svg v-else class="svg-icon" aria-hidden="true" v-on="$listeners">
+  <svg v-else class="svg-icon" aria-hidden="true" v-on="$listeners" :style="style">
     <use :xlink:href="`#icon-${iconFileName}`" rel="external nofollow"  />
   </svg>
 </template>
@@ -25,5 +34,6 @@ export default {
   overflow: hidden;
   vertical-align: -0.15em;
   fill: currentColor;
+  color: var(--color);
 }
 </style>

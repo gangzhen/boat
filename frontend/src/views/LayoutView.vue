@@ -12,7 +12,7 @@ export default {
 <template>
   <div class="b-layout">
     <el-container>
-      <el-aside width="300px">
+      <el-aside width="250px">
         <AsideView/>
       </el-aside>
       <el-container>
@@ -43,7 +43,7 @@ export default {
 }
 
 .el-header {
-  border-bottom: solid 1px #31170D;
+  border-bottom: solid 1px #000000;
 }
 
 .el-main {

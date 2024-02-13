@@ -13,7 +13,7 @@ export default {
       <el-dropdown placement="bottom" trigger="click">
 
         <span class="header-user-item">admin</span>
-        <el-dropdown-menu slot="dropdown" style="color: #31170D">
+        <el-dropdown-menu slot="dropdown" style="color: #000000">
           <el-dropdown-item>查看</el-dropdown-item>
           <el-dropdown-item>新增</el-dropdown-item>
           <el-dropdown-item>删除</el-dropdown-item>
@@ -46,12 +46,12 @@ export default {
 }
 
 .header-user-item {
-  color: #31170D;
+  color: #000000;
   font-size: 16px;
   font-family: "SourceHanSerif-Heavy", serif;
 }
 
 .el-dropdown-menu__item {
-  color: #31170D;
+  color: #000000;
 }
 </style>

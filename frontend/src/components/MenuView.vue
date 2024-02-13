@@ -24,28 +24,32 @@ export default {
           v-if="item.children.length > 0"
       >
         <template slot="title">
-          <svg-icon-view class="menu-icon" :icon-file-name=item.icon />
+          <svg-icon-view class="menu-icon" :icon-file-name=item.icon color="#FFFFFF" />
           <span>{{ item.name }}</span>
         </template>
         <MenuView :data="item.children"></MenuView>
       </el-submenu>
       <!-- 情况二：没子集的情况： -->
       <el-menu-item :key="index" v-else :index="item.path">
-        <svg-icon-view class="menu-icon" :icon-file-name=item.icon />
+        <svg-icon-view class="menu-icon" :icon-file-name=item.icon color="#FFFFFF" />
         <span slot="title">{{ item.name }}</span>
       </el-menu-item>
     </template>
   </div>
 </template>
 
-<style scoped>
+<style>
 
 .menu-icon {
   margin-right: 5px;
 }
 
-.el-menu, .el-submenu, .el-menu-item {
+.el-submenu span, .el-menu-item  span{
   font-family: "SourceHanSerif-SemiBold", serif;
+}
+
+.el-submenu__title i {
+  color: #ffffff;
 }
 
 .el-menu-item.is-active {
@@ -55,7 +59,12 @@ export default {
   margin: 4px;
 }
 
-.el-menu-item.is-active i {
+.el-menu-item.is-active .menu-icon {
   margin-left: -4px;
+  color: #FC0E31;
+}
+
+.el-menu-item.is-active span {
+  font-family: "SourceHanSerif-Heavy", serif;
 }
 </style>
