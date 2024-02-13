@@ -109,7 +109,7 @@ body {
 
 .header-user-area:hover .header-user-icon,
 .header-user-area:hover .header-user-item {
-    color: #F1D792 !important;
+    color: #F1D792;
 }
 
 .header-user-icon {
@@ -127,7 +127,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    box-shadow: 2px 0 6px rgba(0, 21, 41, .35);
+    box-shadow: 2px 0 6px rgba(0, 21, 41, .15);
 }
 
 /* 页面CSS */
@@ -157,6 +157,17 @@ body {
     align-items: center;
     margin-bottom: 0;
     font-weight: bold;
+}
+
+.el-button--primary {
+    background-color: #CE111A;
+    border-color: #CE111A;
+}
+
+.el-button--primary:hover {
+    color: #F1D792;
+    background-color: #CE111A;
+    border-color: #CE111A;
 }
 
 .main-table {
