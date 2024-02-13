@@ -34,7 +34,7 @@ const routes = [
                         path: 'rowing',
                         name: 'coach_rowing',
                         meta: { title: '赛艇' },
-                        component: () => import('@/views/main/MainView.vue'),
+                        component: () => import('@/views/main/coach/CoachView.vue'),
                         children: [
                             {
                                 path: 'annual-register',
@@ -60,7 +60,7 @@ const routes = [
                         path: 'kayaking',
                         name: 'coach_kayaking',
                         meta: { title: '皮划艇' },
-                        component: () => import('@/views/main/MainView.vue'),
+                        component: () => import('@/views/main/coach/CoachView.vue'),
                         children: [
                             {
                                 path: 'annual-register',
@@ -94,7 +94,7 @@ const routes = [
                         path: 'rowing',
                         name: 'referee_rowing',
                         meta: { title: '赛艇' },
-                        component: () => import('@/views/main/MainView.vue'),
+                        component: () => import('@/views/main/referee/RefereeView.vue'),
                         children: [
                             {
                                 path: 'annual-register',
@@ -120,7 +120,7 @@ const routes = [
                         path: 'kayaking',
                         name: 'referee_kayaking',
                         meta: { title: '皮划艇' },
-                        component: () => import('@/views/main/MainView.vue'),
+                        component: () => import('@/views/main/referee/RefereeView.vue'),
                         children: [
                             {
                                 path: 'annual-register',
@@ -154,7 +154,7 @@ const routes = [
                         path: 'rowing',
                         name: 'athlete_rowing',
                         meta: { title: '赛艇' },
-                        component: () => import('@/views/main/MainView.vue'),
+                        component: () => import('@/views/main/athlete/AthleteView.vue'),
                         children: [
                             {
                                 path: 'annual-register',
@@ -168,7 +168,7 @@ const routes = [
                         path: 'kayaking',
                         name: 'athlete_kayaking',
                         meta: { title: '皮划艇' },
-                        component: () => import('@/views/main/MainView.vue'),
+                        component: () => import('@/views/main/athlete/AthleteView.vue'),
                         children: [
                             {
                                 path: 'annual-register',
@@ -190,7 +190,7 @@ const routes = [
                         path: 'rowing',
                         name: 'information_rowing',
                         meta: { title: '赛艇' },
-                        component: () => import('@/views/main/MainView.vue'),
+                        component: () => import('@/views/main/information/InformationView.vue'),
                         children: [
                             {
                                 path: 'competition-calendar',
@@ -210,7 +210,7 @@ const routes = [
                         path: 'kayaking',
                         name: 'information_kayaking',
                         meta: { title: '皮划艇' },
-                        component: () => import('@/views/main/MainView.vue'),
+                        component: () => import('@/views/main/information/InformationView.vue'),
                         children: [
                             {
                                 path: 'competition-calendar',
@@ -238,13 +238,13 @@ const routes = [
                         path: 'rowing',
                         name: 'results-notice_rowing',
                         meta: { title: '赛艇' },
-                        component: () => import('@/views/main/results_notice/rowing/ResultRowNotice.vue'),
+                        component: () => import('@/views/main/results_notice/ResultRowNotice.vue'),
                     },
                     {
                         path: 'kayaking',
                         name: 'results-notice_kayaking',
                         meta: { title: '皮划艇' },
-                        component: () => import('@/views/main/results_notice/kayaking/ResultKayakNotice.vue'),
+                        component: () => import('@/views/main/results_notice/ResultKayakNotice.vue'),
                     },
                 ]
             },
@@ -258,7 +258,7 @@ const routes = [
                         path: 'rowing',
                         name: 'points_rowing',
                         meta: { title: '赛艇' },
-                        component: () => import('@/views/main/MainView.vue'),
+                        component: () => import('@/views/main/points/PointsView.vue'),
                         children: [
                             {
                                 path: 'ranking',
@@ -276,13 +276,13 @@ const routes = [
                                 path: 'statistic',
                                 name: 'points_rowing_statistic',
                                 meta: { title: '运动员参赛人数统计（年）' },
-                                component: () => import('@/views/main/MainView.vue'),
+                                component: () => import('@/views/main/points/rowing/RowView.vue'),
                                 children: [
                                     {
                                         path: 'entry',
                                         name: 'points_rowing_statistic_entry',
                                         meta: { title: '新入榜运动员相关信息' },
-                                        component: () => import('@/views/main/MainView.vue'),
+                                        component: () => import('@/views/main/points/rowing/statistic/RowStatisticView.vue'),
                                         children: [
                                             {
                                                 path: 'name-list',
@@ -308,7 +308,7 @@ const routes = [
                                         path: 'retention',
                                         name: 'points_rowing_statistic_retention',
                                         meta: { title: '留榜运动员相关信息' },
-                                        component: () => import('@/views/main/MainView.vue'),
+                                        component: () => import('@/views/main/points/rowing/statistic/RowStatisticView.vue'),
                                         children: [
                                             {
                                                 path: 'name-list',
@@ -338,7 +338,7 @@ const routes = [
                         path: 'kayaking',
                         name: 'points_kayaking',
                         meta: { title: '皮划艇' },
-                        component: () => import('@/views/main/MainView.vue'),
+                        component: () => import('@/views/main/points/PointsView.vue'),
                         children: [
                             {
                                 path: 'ranking',
@@ -356,13 +356,13 @@ const routes = [
                                 path: 'statistic',
                                 name: 'points_kayaking_statistic',
                                 meta: { title: '运动员参赛人数统计（年）' },
-                                component: () => import('@/views/main/MainView.vue'),
+                                component: () => import('@/views/main/points/kayaking/KayakView.vue'),
                                 children: [
                                     {
                                         path: 'entry',
                                         name: 'points_kayaking_statistic_entry',
                                         meta: { title: '新入榜运动员相关信息' },
-                                        component: () => import('@/views/main/MainView.vue'),
+                                        component: () => import('@/views/main/points/kayaking/statistic/KayakStatisticView.vue'),
                                         children: [
                                             {
                                                 path: 'name-list',
@@ -388,7 +388,7 @@ const routes = [
                                         path: 'retention',
                                         name: 'points_kayaking_statistic_retention',
                                         meta: { title: '留榜运动员相关信息' },
-                                        component: () => import('@/views/main/MainView.vue'),
+                                        component: () => import('@/views/main/points/kayaking/statistic/KayakStatisticView.vue'),
                                         children: [
                                             {
                                                 path: 'name-list',
@@ -426,7 +426,7 @@ const routes = [
                         path: 'rowing',
                         name: 'manage-notice_rowing',
                         meta: { title: '赛艇' },
-                        component: () => import('@/views/main/MainView.vue'),
+                        component: () => import('@/views/main/manage_notice/ManageNoticeView.vue'),
                         children: [
                             {
                                 path: 'referee-notice',
@@ -458,7 +458,7 @@ const routes = [
                         path: 'kayaking',
                         name: 'manage-notice_kayaking',
                         meta: { title: '皮划艇' },
-                        component: () => import('@/views/main/MainView.vue'),
+                        component: () => import('@/views/main/manage_notice/ManageNoticeView.vue'),
                         children: [
                             {
                                 path: 'referee-notice',

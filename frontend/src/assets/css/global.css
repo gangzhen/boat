@@ -11,3 +11,8 @@ body {
     color: #000000 !important;
     font-size: 14px;
 }
+
+.main-area {
+    width: 100%;
+    height: 100%;
+}

@@ -43,7 +43,7 @@ export default {
 }
 
 .el-header {
-  border-bottom: solid 1px #000000;
+  box-shadow: 2px 0 6px rgba(0, 21, 41, .35);
 }
 
 .el-main {
