@@ -491,7 +491,11 @@ export default {
   display: flex;
   flex-direction: column;
   height: 100%;
-  overflow: auto;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .aside-logo {
