@@ -464,16 +464,16 @@ export default {
 <template>
   <div class="aside-area">
     <div class="aside-logo">
-      <img src="@/assets/img/logo.png" alt="" style="width: 70px; height: 70px">
+      <img src="@/assets/img/logo.png" alt="" style="width: 70px; height: 70px; border-radius: 8px; box-shadow: 2px 0 6px rgba(0, 21, 41, .35);" @click="goHome()">
     </div>
     <div class="aside-title">
       <span @click="goHome()">赛艇皮划艇赛事管理系统</span>
     </div>
     <div class="aside-menu">
       <el-menu
-          background-color="#FC0E31"
+          background-color="#CE111A"
           text-color="#FFFFFF"
-          active-text-color="#FC0E31"
+          active-text-color="#FFFFFF"
           :default-active="activeIndex"
           :unique-opened="true"
           router
@@ -500,7 +500,7 @@ export default {
   align-items: center;
   justify-content: center;
   height: 120px;
-  background-color: #FC0E31;
+  background-color: #CE111A;
 }
 
 .aside-title {
@@ -510,9 +510,9 @@ export default {
   justify-content: center;
   height: 60px;
   color: #FFFFFF;
-  background-color: #FC0E31;
-  font-size: 16px;
-  font-family: "SourceHanSerif-Heavy", serif;
+  background-color: #CE111A;
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 .aside-menu {

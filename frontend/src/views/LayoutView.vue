@@ -39,7 +39,7 @@ export default {
 
 .el-aside {
   height: 100vh;
-  background-color: #FC0E31;
+  background-color: #CE111A;
 }
 
 .el-header {

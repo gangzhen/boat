@@ -48,7 +48,7 @@ export default {
 .header-user-item {
   color: #000000;
   font-size: 16px;
-  font-family: "SourceHanSerif-Heavy", serif;
+  font-weight: bolder;
 }
 
 .el-dropdown-menu__item {

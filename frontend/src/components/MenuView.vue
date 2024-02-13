@@ -45,26 +45,26 @@ export default {
 }
 
 .el-submenu span, .el-menu-item  span{
-  font-family: "SourceHanSerif-SemiBold", serif;
+  font-weight: bold;
 }
 
 .el-submenu__title i {
-  color: #ffffff;
+  color: #FFFFFF;
+}
+
+.el-menu-item:hover, .el-submenu__title:hover {
+  color: #F1D792 !important;
 }
 
 .el-menu-item.is-active {
-  background-color: #F1D792 !important;
-  font-family: "SourceHanSerif-Bold", serif;
+  background-color: #1890FF !important;
+  font-weight: bolder;
   border-radius: 6px;
   margin: 4px;
 }
 
 .el-menu-item.is-active .menu-icon {
   margin-left: -4px;
-  color: #FC0E31;
-}
-
-.el-menu-item.is-active span {
-  font-family: "SourceHanSerif-Heavy", serif;
+  color: #FFFFFF;
 }
 </style>
